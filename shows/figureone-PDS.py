@@ -1,14 +1,6 @@
 #/usr/bin/python
 
-# Title Ideas:
-#
-# The Bubble Thwart
 # Personal Depersonalization System
-# Depersonalization System
-# Personalization Thwarting System
-# 
-# 
-# 
 # 
 # v 1.0
 # by Ben Grosser
