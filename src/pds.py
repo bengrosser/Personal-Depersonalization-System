@@ -2,9 +2,10 @@
 
 # Personal Depersonalization System
 # 
-# v 1.0
+# v 1.1
 # by Ben Grosser
 # July, 2011
+# updated Jan, 2016
 
 # first exhibited at Figure One, Champaign, IL, July 2011
 
@@ -58,7 +59,7 @@ d2.close()
 # words/location log file
 #log = open('goog.log','a')
 
-pid = open('/Users/grosser/pds/log/goog.pid','w')
+pid = open('goog.pid','w')
 pid.write(str(os.getpid()))
 pid.close()
 
@@ -72,7 +73,7 @@ wordchoice = range(0,totalwords-1)
 shuffle(wordchoice)
 
 # get zipcode info
-z = open('/Users/grosser/pds/src/zips.txt')
+z = open('zips.txt')
 zipfile = z.readlines()
 z.close()
 zips = []
@@ -274,7 +275,7 @@ while cnt < runlength:
     
     picklocation = chrome.windows[1].active_tab.URL.get()
     logline = word + ',' + picklocation + '\n'
-    log = open('/Users/grosser/pds/log/goog.log','a')
+    log = open('goog.log','a')
     log.write(logline)
     log.close()
 

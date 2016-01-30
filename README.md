@@ -11,10 +11,16 @@ __src__ contains the files of interest:
 
 ### Dependencies
 
-* written to work with Google Chrome
+* written to work with Google Chrome on OS X
 * uses/requires AppleScript
-* uses the built-in unix dictionary
+* uses/requires [appscript](http://appscript.sourceforge.net/index.html)
+* uses the built-in unix dictionary on OS X
 * maybe other things I've forgotten
+
+### Note
+
+* This code is currently written to run the app in an exhibition mode (meaning it full-screens Chrome and wants the foreground). It wouldn't take too much work to adapt for background activity.
+* There is currently no handling of two-factor authentication. To work around this, comment out logout/login code and login/authenticate manually.
 
 ### Project Homepage
 * [Personal Depersonalization System](http://bengrosser.com/projects/personal-depersonalization-system/)
